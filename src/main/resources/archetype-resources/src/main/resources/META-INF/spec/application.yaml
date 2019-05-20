@@ -1,0 +1,22 @@
+apiVersion: coin/v1
+kind: Component
+metadata:
+  namespace: ${artifactId}
+  name: helloworld
+spec:
+  class: ${package}.implement.SayHelloImpl
+  response: 您好！世界！
+
+---
+apiVersion: coin/v1
+kind: Cron
+metadata:
+  namespace: ${artifactId}
+  name: helloworld-cron
+spec:
+  componentName: helloworld
+  componentType: action
+  action: sayHello
+  second: 60/10
+  arguments:
+    1: CronSample
