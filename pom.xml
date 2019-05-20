@@ -10,7 +10,11 @@
   <packaging>maven-archetype</packaging>
 
   <name>Archetype - femto-app</name>
-
+  <description>Femto Application Template</description>
+  <organization>
+    <name>FemtoFraemwork</name>
+    <url>https://github.com/femtoframework/</url>
+  </organization>
   <url>https://github.com/femtoframework/femto-app</url>
 
   <properties>
