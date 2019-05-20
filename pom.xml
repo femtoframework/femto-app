@@ -6,7 +6,7 @@
 
   <groupId>org.femtoframework.app</groupId>
   <artifactId>femto-app</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.1</version>
   <packaging>maven-archetype</packaging>
 
   <name>Archetype - femto-app</name>
@@ -52,4 +52,15 @@
       </plugins>
     </pluginManagement>
   </build>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh-snapshots</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh-releases</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+    </repository>
+  </distributionManagement>
 </project>
