@@ -63,4 +63,42 @@
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
     </repository>
   </distributionManagement>
+
+  <!-- SCM configurations to allow maven updates to source control.
+E.g.: org.apache.maven.plugins:maven-release-plugin can create and update release tags to your git repo -->
+  <scm>
+    <connection>scm:git:git@github.com:femtoframework/femto-app.git</connection>
+    <developerConnection>scm:git:git@github.com:femtoframework/femto-app.git</developerConnection>
+    <url>https://github.com/femtoframework/femto-app.git</url>
+    <tag>v1.0.1</tag>
+  </scm>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+      <comments>A business-friendly OSS license</comments>
+    </license>
+  </licenses>
+
+  <issueManagement>
+    <system>github</system>
+    <url>https://github.com/femtoframework/femto-app/issues</url>
+  </issueManagement>
+
+  <developers>
+    <developer>
+      <id>shaoxt</id>
+      <name>Sheldon Shao</name>
+      <url>https://www.linkedin.com/in/sheldon-shao-1330711b/</url>
+      <roles>
+        <role>Administrator</role>
+        <role>Developer</role>
+      </roles>
+      <properties>
+        <picUrl>https://avatars2.githubusercontent.com/u/1782780</picUrl>
+      </properties>
+    </developer>
+  </developers>
 </project>
