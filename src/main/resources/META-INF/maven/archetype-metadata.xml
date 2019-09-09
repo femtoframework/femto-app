@@ -24,6 +24,14 @@ under the License.
   name="${artifactId}">
 
   <fileSets>
+    <fileSet filtered="true" packaged="false">
+      <directory/>
+      <includes>
+        <include>.gitignore</include>
+        <include>Dockerfile</include>
+        <include>*.sh</include>
+      </includes>
+    </fileSet>
     <fileSet filtered="true" packaged="true">
       <directory>src/main/java</directory>
     </fileSet>
